@@ -1,0 +1,41 @@
+<html>
+<body>
+<table border="1">
+<tr bgcolor="red">
+<th>section_id></th>
+<th>details></th>
+<th>chapter></th>
+</tr>
+
+<?php
+require 'connection.php';
+session_start();
+$con=Connect();
+
+$sql = "select * from section_of_law";
+ 
+$m=mysqli_query($sql);
+while($row=mysqli_fetch_array($m))
+{
+     echo"<tr>";
+	 
+	 echo "<td>";
+	 echo $row['section_id'];
+	 echo "</td>";
+	 
+	 echo "<td>";
+	 echo $row['details'];
+	 echo "</td>";
+	 
+	 echo "<td>";
+	 echo $row['chapter'];
+	 echo "</td>";
+ 
+    echo"<tr>";
+}
+	?>
+	</table>
+	</body>
+	</html>
+	
+

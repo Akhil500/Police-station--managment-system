@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>OFFICER DETAILS</title>
+        <link rel="stylesheet" href="style1.css">
+    </head>
+    <body>
+        <style>
+            body{background-image: url(loginbg.jpg);
+                
+            }
+        </style>
+        <form action="officer.php" method="post">
+            <div id="nav_wrapper">
+                    
+            </div>
+			<a href="http://localhost/DBMS/home.html">Back</a></li></mark></center></h1>
+            
+            <div class="signupbox2">
+                <h2>OFFICER DETAILS</h2>
+                    <p>officer_id</p>
+                    <input type="text" placeholder="officer_id" name="officer_id" required>
+                    <p>name</p>
+                    <input type="text" placeholder="name" name="name" required>
+                    <p>age</p>
+                    <input type="number" placeholder="age" name="age" required>
+					<p>gender</p>
+                    <input type="text" placeholder="gender" name="gender" required>
+					
+					<p>phon_no</p>
+                    <input type="text" name="contact_no" type="tel" pattern="^\d{3}\d{3}\d{4}$" required >
+					<br> <h1:red>(format: xxx-xxx-xxxx):<br/>
+					
+					<p>email_id</p>	
+                    <input type="text" pattern="[^ @]*@[^ @]*" placeholder="Enter your email" name="email_id" required>					
+					
+					<p>adhar_no<p>
+                    <input type="text" name="adhar_no" type="tel" pattern="^\d{4}\d{4}\d{4}$" required >
+					<br> <h1:red>(format: xxxx-xxxx-xxxx):<br/>
+					
+                    <p>address</p>
+                    <input type="text" name="address" placeholder="address" required>	
+					<p>qualification</p>
+                    <input type="text" name="qualification" placeholder="qualification" required>
+					<p>d_o_j</p>
+                    <input type="date" name="d_o_j" placeholder="date" required>
+					
+					<p>nationality</p>
+                    <input type="text" name="nationality" placeholder="nationality" required>	
+                    
+					
+					
+                   <br><br> <input type="submit" name="case" value="submit">
+            </div>
+        </form>
+    </body>
+</html>

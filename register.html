@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Register</title>
+        <link rel="stylesheet" href="style1.css">
+    </head>
+    <body>
+        <style>
+            body{background-image: url(loginbg.jpg);
+                
+            }
+        </style>
+        <form action="register.php" method="post">
+            <div id="nav_wrapper">
+                    
+            </div>
+            
+            <div class="signupbox">
+                <h2>Register Here</h2>
+                    <p>First Name</p>
+                    <input type="text" placeholder="First Name" name="fname" required>
+                    <p>Last Name</p>
+                    <input type="text" placeholder="Last Name" name="lname" required>
+                    <p>Email-id</p>
+                    
+					 <input type="text" pattern="[^ @]*@[^ @]*" placeholder="Enter your email" name="u_email" required>
+
+					
+					<p>phonenum</p>
+                    <input type="text" name="mob" type="tel" pattern="^\d{3}\d{3}\d{4}$" required >
+					<br> <h1:red>(format: xxx-xxx-xxxx):<br/>
+ 
+                    
+                    <p>Enter Password</p>
+                    <input type="password" name="pass" placeholder="pass" required>
+                    <p>Re-enter Password</p>
+                    <input type="password" name="pass" placeholder="re_pass" required>
+                    <p>Gender</p>
+                    <input type="radio" value="male" name="sex" required>Male
+                    <input type="radio" value="female" name="sex" required>Female<br>
+                    
+                    <input type="submit" name="reg" value="Sign In">
+            </div>
+        </form>
+    </body>
+</html>
